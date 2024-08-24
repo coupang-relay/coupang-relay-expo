@@ -10,7 +10,8 @@
     "test": "jest --watchAll",
     "lint": "expo lint",
     "biome:format": "bunx biome format --write",
-    "biome:lint": "bunx biome lint --write"
+    "biome:lint": "bunx biome lint --write",
+    "postinstall": "lefthook install"
   },
   "jest": {
     "preset": "jest-expo"
