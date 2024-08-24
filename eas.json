@@ -3,6 +3,20 @@
     "version": ">= 10.1.1"
   },
   "build": {
+    "base": {
+      "android": {
+        "image": "latest",
+        "env": {
+          "PLATFORM": "android"
+        }
+      },
+      "ios": {
+        "image": "latest",
+        "env": {
+          "PLATFORM": "ios"
+        }
+      }
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
