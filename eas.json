@@ -3,7 +3,9 @@
     "version": ">= 10.1.1"
   },
   "build": {
-    "base": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
       "android": {
         "image": "latest"
       },
@@ -11,14 +13,23 @@
         "image": "latest"
       }
     },
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
     },
-    "production": {}
+    "production": {
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    }
   },
   "submit": {
     "production": {}
