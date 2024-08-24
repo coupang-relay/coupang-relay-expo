@@ -5,16 +5,10 @@
   "build": {
     "base": {
       "android": {
-        "image": "latest",
-        "env": {
-          "PLATFORM": "android"
-        }
+        "image": "latest"
       },
       "ios": {
-        "image": "latest",
-        "env": {
-          "PLATFORM": "ios"
-        }
+        "image": "latest"
       }
     },
     "development": {
